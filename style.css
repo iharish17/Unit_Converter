@@ -1,0 +1,202 @@
+body {
+      background-image: linear-gradient(135deg, #7f7fd5 0%, #91eae4 100%);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+
+    .welcome-banner {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto 40px auto;
+      padding-top: 42px;
+      padding-bottom: 14px;
+    }
+
+    .welcome-title {
+      color: #ffd700;
+      font-size: 2.6rem;
+      font-weight: 900;
+      letter-spacing: 0.018em;
+      text-shadow: 0 2px 18px rgba(60, 60, 60, 0.13);
+      margin-bottom: 13px;
+    }
+
+    .welcome-description {
+      color: #e8ecf7;
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .link-buttons-row {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      margin-top: 11px;
+    }
+
+    .link-button {
+      text-decoration: none;
+      background: #ffd600;
+      color: #2c2f36;
+      padding: 19px 33px;
+      font-size: 1.27rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(80, 80, 150, 0.15);
+      cursor: pointer;
+      transition: filter 0.12s, transform 0.13s;
+      margin-bottom: 14px;
+    }
+
+    .link-button:hover {
+      filter: brightness(0.94);
+      transform: translateY(-2px) scale(1.04);
+    }
+
+    @media (max-width: 1100px) {
+      .welcome-title {
+        font-size: 2.2rem;
+      }
+
+      .welcome-description {
+        font-size: 1.1rem;
+      }
+
+      .link-buttons-row {
+        gap: 19px;
+      }
+
+      .link-button {
+        font-size: 1.15rem;
+        padding: 17px 24px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .welcome-banner {
+        margin-bottom: 12px;
+        padding-top: 28px;
+      }
+
+      .welcome-title {
+        font-size: 1.15rem;
+      }
+
+      .welcome-description {
+        font-size: 0.91rem;
+      }
+
+      .link-buttons-row {
+        gap: 10px;
+      }
+
+      .link-button {
+        font-size: 1rem;
+        padding: 11px 8vw;
+      }
+    }
+
+    .card {
+      background: transparent;
+      /* Semi-transparent white */
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+      border-radius: 24px;
+      /* Larger rounding */
+      max-width: 760px;
+      width: 90%;
+      text-align: center;
+      padding: 28px 44px 36px;
+      margin-top: 36px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    h2 {
+      color: #ffd600;
+      text-align: center;
+      font-size: 2.1rem;
+      font-weight: 800;
+      margin-bottom: 22px;
+      margin-top: 0;
+      letter-spacing: 0.01em;
+      text-shadow: 0 2px 18px rgba(60, 60, 60, 0.10);
+    }
+
+    .row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 25px;
+      align-items: baseline;
+    }
+
+    .label {
+      font-weight: 600;
+      color: #2c2f36;
+      margin-top: 13px;
+      margin-bottom: 7px;
+    }
+
+    select,
+    .unit-input {
+      padding: 9px 10px;
+      border: 1.5px solid #d6e6f6;
+      border-radius: 8px;
+      background: #f6faff;
+      color: #323447;
+      margin-bottom: 7px;
+      max-width: 85%;
+      font-size: 1rem;
+      transition: border 0.22s;
+      font-family: inherit;
+      font-weight: 500;
+    }
+
+    .unit-input:focus,
+    select:focus {
+      border: 1.5px solid #7f7fd5;
+    }
+
+    .result {
+      margin-top: 24px;
+      font-size: 1.12rem;
+      font-weight: bold;
+      color: #272921;
+      text-align: center;
+      min-height: 32px;
+    }
+
+    @media (max-width:670px) {
+      .card {
+        max-width: 97vw;
+        padding: 16px 4vw 14px 4vw;
+      }
+
+      .button-row {
+        gap: 14px;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width:480px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .description {
+        font-size: 1.01rem;
+      }
+    }
