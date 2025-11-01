@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Unit Converter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div class="welcome-banner">
-    <div class="welcome-title">Welcome Maths Lovers!</div>
-    <div class="welcome-description">
-      Explore your passion for mathematics with our carefully curated tools and resources. Click a button below to jump
-      to the tool you want to use.
-    </div>
-    <div class="link-buttons-row">
-      <a href="https://solve-equation.vercel.app" class="link-button">Quadratic Equation Solver</a>
-      <a href="https://solve-equation.vercel.app" class="link-button">Equation Solver</a>
-      <a href="https://mean-mode-median.vercel.app" class="link-button">Mean, Mode and Median</a>
-      <a href="https://number-system-ten.vercel.app" class="link-button">Number System</a>
-      <a href="https://check-my-bmi.vercel.app" class="link-button">BMI Calculator</a>
-      <a href="https://know-your-emi.vercel.app" class="link-button">EMI Calculator</a>
-      <a href="#" class="link-button">Unit Converter</a>
-      <a href="https://age-unveil.vercel.app" class="link-button" target="_self" rel="noopener noreferrer">Age Calculator</a>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="welcome-banner">
+        <div class="welcome-title">Welcome Maths Lovers!</div>
+        <div class="welcome-description">
+            Explore your passion for mathematics with our carefully curated tools and resources. Click a button below to
+            jump
+            to the tool you want to use.
+        </div>
+        <div class="link-buttons-row">
+            <a href="https://solve-equation.vercel.app" class="link-button">Quadratic Equation Solver</a>
+            <a href="https://solve-equation.vercel.app" class="link-button">Equation Solver</a>
+            <a href="https://mean-mode-median.vercel.app" class="link-button">Mean, Mode and Median</a>
+            <a href="https://number-system-ten.vercel.app" class="link-button">Number System</a>
+            <a href="https://check-my-bmi.vercel.app" class="link-button">BMI Calculator</a>
+            <a href="https://know-your-emi.vercel.app" class="link-button">EMI Calculator</a>
+            <a href="#" class="link-button">Unit Converter</a>
+            <a href="https://age-unveil.vercel.app" class="link-button" target="_self" rel="noopener noreferrer">Age
+                Calculator</a>
+        </div>
+        <div class="card">
+            <h2>Unit Converter</h2>
+            <div class="row">
+                <span class="label">Category</span>
+                <select id="category">
+                    <option value="length">Length</option>
+                    <option value="weight">Weight</option>
+                    <option value="temperature">Temperature</option>
+                    <option value="time">Time</option>
+                    <option value="area">Area</option>
+                    <option value="currency">Currency</option>
+                    <option value="mass">Mass</option>
+                    <option value="data">Data</option>
+                    <option value="volume">Volume</option>
+                    <option value="numeral">Numeral System</option>
+                    <option value="speed">Speed</option>
+                    <option value="gst">GST Converter</option>
+                </select>
+            </div>
+            <div class="row">
+                <input class="unit-input" type="text" id="inputValue" step="any" placeholder="Enter value" />
+                <select id="fromUnit"></select>
+                <span class="label">to</span>
+                <select id="toUnit"></select>
+            </div>
+            <div class="result" id="result"></div>
+        </div>
     </div>
-    <div class="card">
-      <h2>Unit Converter</h2>
-      <div class="row">
-        <span class="label">Category</span>
-        <select id="category">
-          <option value="length">Length</option>
-          <option value="weight">Weight</option>
-          <option value="temperature">Temperature</option>
-        </select>
-      </div>
-      <div class="row">
-        <input class="unit-input" type="number" id="inputValue" step="any" placeholder="Enter value" />
-        <select id="fromUnit"></select>
-        <span class="label">to</span>
-        <select id="toUnit"></select>
-      </div>
-      <div class="result" id="result"></div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 </body>
+
 </html>
